@@ -1,3 +1,39 @@
+// this is a script beacuse it has no import or export statements 
+let myName : any;
+
+myName = "Kalu John Peace";
+
+const tryMe = 'try';
+
+
+let physicist : String | number;
+
+physicist  = Math.random() > 0.5 ? "Isaac newton" : 85 ;
+
+if (typeof physicist === "string"){
+    physicist.toUpperCase();
+}
+
+// literal Types 
+// here we set the type of the  the matematicain to the initial value which is albert einstein 
+// You can think of each primitive type as a union of every possible matching literal value.
+let Mathematician : " Albert Einstein "; 
+
+// you can only assign the value of a literal type to it
+Mathematician =" Albert Einstein ";
+
+
+// Union type annotations can mix and match between literals and primitives. A repre‐
+// sentation of a lifespan, for example, might be represented by any number or one of a
+// couple known edge cases:
+let age : "twelve" | String | number ;
+
+//you can also assign a literal type to another variable of the same type  ,
+// here Mathematician is a String although its literal type is AAlbert Einstein  
+let BestMathematician = Mathematician;
+
+
+
 let nameMaybe = Math.random() > 0.5
  ? "Tony Hoare"
  : undefined;
@@ -111,3 +147,6 @@ let WithLastName : WithLastName = hasBoth;
 
 
 console.log(WithFirstName);
+
+// May 02 2024
+
